@@ -12,9 +12,14 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
     }
-
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+     self.view.endEditing(true)
+    }
 
 }
 
