@@ -1,0 +1,227 @@
+/*
+
+===============================
+Footer Area
+===============================
+
+*/
+.footer-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  
+  .footer-widget {
+    margin-bottom: 30px;
+    color: $cl-white;
+    img {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      position: relative;
+      color: #4b617d;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 20px;
+      color: $cl-white;
+      font-size: 14px;
+    }
+    .social {
+      a {
+        height: 35px;
+        width: 35px;
+        line-height: 37px;
+        border-radius: 50%;
+        background: $cl-white;
+        font-size: 13px;
+        text-align: center;
+        margin-right: 5px;
+        display: inline-block;
+        &:hover {
+          background: $cl-primary;
+          color: $cl-white;
+        }
+      }
+    }
+    &.footer-nav {
+      margin-bottom: 30px;
+      ul {
+        li {
+          margin-bottom: 10px;
+          position: relative;
+          transition: 0.4s;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            color: $cl-white;
+            text-transform: capitalize;
+            font-family: $headding-font;
+            position: relative;
+            font-size: 15px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    &.footer-insta {
+      .row {
+        margin: 0 -2px;
+        [class*="col"] {
+          padding: 0 2px;
+          margin-bottom: 4px;
+          a {
+            position: relative;
+            display: block;
+            img {
+              width: 100%;
+            }
+            &::before {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              content: "";
+              left: 0;
+              top: 0;
+              background: $cl-blue;
+              opacity: 0;
+              transition: 0.4s;
+              z-index: 1;
+            }
+            &:after {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              color: $cl-white;
+              font-size: 16px;
+              content: "\f06e";
+              font-family: Fontawesome;
+              opacity: 0;
+              z-index: 2;
+              transition: 0.4s;
+            }
+            &:hover {
+              &::before {
+                opacity: 0.8;
+              }
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+    .m-app {
+      text-align: center;
+      a {
+        display: block;
+        margin-bottom: 15px;
+        padding: 12px 16px;
+        border: 2px solid $cl-white;
+        border-radius: 4px;
+        color: $cl-white;
+        i {
+          margin-right: 8px;
+        }
+        &:hover {
+          background: $cl-primary;
+          border-color: $cl-primary;
+        }
+      }
+    }
+  }  
+}
+
+.wave-animation {
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 143px;
+    background: url('../images/wave.png');
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    animation: animate 10s linear infinite;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -30px;
+    opacity: 0.2;
+    z-index: -1;
+    height: 143px;
+    background: url('../images/wave.png');
+    width: 100%;
+    animation: animate-reverse 10s linear infinite;
+  }
+}
+
+// Footer Animation
+@keyframes animate {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 1360px;
+	}
+}
+
+@keyframes animate-reverse {
+	0% {
+		background-position: 1360px;
+	}
+	100% {
+		background-position: 0px;
+	}
+}
+  
+/*
+
+===============================
+Copyright Area
+===============================
+
+*/
+.copyright {
+  p {
+    color: $cl-white;
+    font-size: 14px;
+    margin: 0;
+    @media (max-width: 767px){
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  ul {
+    float: right;
+    @media (max-width: 767px){
+      float: none;
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      @media (max-width: 767px){
+        margin-left: 0px;
+      }
+      a {
+        color: $cl-black;
+        &:hover {
+          color: $cl-mint;
+        }
+      }
+    }
+  }
+}
+
+  

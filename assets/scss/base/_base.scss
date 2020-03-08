@@ -1,0 +1,661 @@
+
+/*** 
+
+==================
+    Color Classes
+==================
+
+***/
+
+.cl-black {
+    color: $cl-black;
+}
+.cl-primary {
+    color: $cl-primary;
+}
+.cl-white {
+    color: $cl-white;
+}
+.cl-blue {
+    color: $cl-blue;
+}
+.cl-blue-2 {
+    color: $cl-blue-2;
+}
+.cl-green {
+    color: $cl-green;
+}
+.cl-mint {
+    color: $cl-mint;
+}
+.cl-yellow {
+    color: $cl-yellow;
+}
+.cl-gray {
+    color: $cl-gray;
+}
+
+
+
+.cl-facebook {
+    color: $cl-facebook;
+}
+
+.cl-twitter {
+    color: $cl-twitter;
+}
+
+.cl-youtube {
+    color: $cl-youtube;
+}
+
+.cl-pinterest {
+    color: $cl-pinterest;
+}
+
+.cl-instagram {
+    color: $cl-instagram;
+}
+
+
+.facebook-bg {
+    background: $facebook-bg;
+}
+
+.twitter-bg {
+    background: $twitter-bg;
+}
+
+.youtube-bg {
+    background: $youtube-bg;
+}
+
+.pinterest-bg {
+    background: $pinterest-bg;
+}
+
+.google-plus-bg {
+    background: $google-plus-bg;
+}
+
+.linkedin-bg {
+    background: $linkedin-bg;
+}
+
+.instagram-bg {
+    background: $instagram-bg;
+}
+
+
+
+
+/*** 
+
+==================
+    Section Styles
+==================
+
+***/
+
+.container {
+    max-width: 1200px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding-2 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section-padding-3 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+
+.section-title {
+    margin-bottom: 35px;
+    h2 {
+        position: relative;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.4;
+        z-index: 1;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+        margin-top: -6px;
+        span {
+            color: $cl-primary;
+        }
+    }
+    h4 {
+        font-size: 18px;
+        font-family: $main-font;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $cl-primary;
+    }
+    p {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 991px){
+    .section-padding {
+        padding: 70px 0;
+    }
+    .section-padding-2 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 767px){
+    .section-padding {
+        padding: 50px 0;
+    }
+    .section-padding-2 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 575px){
+    .section-title h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 450px){
+    .section-title h2 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+/*** 
+
+=======================
+    Margin and Padding
+=======================
+
+***/
+
+/* 
+    Margin Top styles
+*/
+
+.mar-0 {
+    margin: 0;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+
+
+/* 
+    Margin Bottom Styles
+*/
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+
+/* 
+    Margin Right Styles
+*/
+
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mr-50 {
+    margin-right: 50px;
+}
+.mr-60 {
+    margin-right: 60px;
+}
+
+
+/* 
+    Padding Top Styles
+*/
+
+.pad-0 {
+    padding: 0;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pad-15 {
+    padding: 15px !important;
+}
+
+
+/* 
+    Padding Bottom Styles
+*/
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+
+
+
+/*** 
+
+============================
+    Background and Overlay
+============================
+
+***/
+
+.gray-bg {
+    background: #F9F9F9;
+}
+
+.black-bg {
+    background: #292929;
+}
+
+.black-bg-2 {
+    background: #555555;
+}
+
+.primary-bg {
+    background: $cl-primary;
+}
+
+.primary-light-bg {
+    background: #00C9B72c;
+}
+
+.primary-bg-dark {
+    background: #037EBD;
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+
+.blue-bg {
+    background: $cl-blue;
+}
+
+.blue-2-bg {
+    background: #234BA5;
+}
+
+.green-bg {
+    background: $cl-green;
+}
+
+.blue-bg-2 {
+    background: #000040;
+}
+
+.yellow-bg {
+    background: #FDB62F;
+}
+
+.yellow-light-bg {
+    background: #FEEDCD;
+}
+
+.purple-bg {
+    background: #8E0EF0;
+}
+
+.purple-light-bg {
+    background: #E8CFFC;
+}
+
+.mint-bg {
+    background: $cl-mint;
+}
+
+.transparent-bg {
+    background: transparent;
+}
+
+
+.gradient-bg {
+    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+}
+
+
+
+
+.dark-overlay {
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.dark-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #111;
+    content: "";
+    z-index: -1;
+    opacity: .6;
+}
+
+
+.mint-overlay {
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.mint-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: $cl-mint;
+    content: "";
+    z-index: -1;
+    opacity: .7;
+}
+
+
+.blue-overlay {
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.blue-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: $cl-blue;
+    content: "";
+    z-index: -1;
+    opacity: .85;
+}
+
+
+
+.home-gradient-overlay {
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.home-gradient-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, #02004c 0%, #02004b 31%, #02004b 100%);
+    content: "";
+    z-index: -1;
+    opacity: .5;
+}
+
+
+.gradient-overlay {
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(791.1px at 50% 1.82%, #2445bf 0, #00086d 100%);
+    content: "";
+    z-index: -1;
+    opacity: .9;
+}
+
+
+
+/*** 
+
+===================
+    Buttons Style
+===================
+
+***/
+
+
+.bttn-mid {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 14px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+    font-family: $headding-font;
+}
+
+
+
+.bttn-small {
+    position: relative;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+
+.bttn-mid i, .bttn-small i {
+    margin-right: 7px;
+}
+
+.btn-fill {
+    color: $cl-white;
+    background: $cl-primary;
+    &:hover {
+        background: $cl-white;
+        color: $cl-black;
+        box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.bttn-mid.btn-emt {
+    padding: 12px 41px;
+}
+
+.btn-emt {
+    background: transparent;
+    color: $cl-white;
+    border: 2px solid $cl-white;
+    &:hover {
+        color: $cl-white;
+        box-shadow: none;
+        background: $cl-primary;
+        border-color: $cl-primary;
+    }
+}
+
+.btn-wht {
+    background: $cl-white;
+    color: $cl-primary;
+}
+
+.btn-wht:hover {
+    background: $cl-primary;
+    color: $cl-white;
+}
+
+
+
+
+
+/* ==============================
+    Preloader
+    ============================== */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 4px solid $cl-blue;
+    border-top-color: #ffffff;
+    animation: spinner 1s linear infinite;
+}
+
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+
+/* 
+==============================
+    ScrollUp Button 
+============================== 
+*/
+
+a#scrollUp {
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $cl-primary;
+    box-shadow: 0px 0px 15px 0px rgba(72, 67, 211, 0.12);
+    text-align: center;
+    color: $cl-white;
+    font-size: 14px;
+}
+
+
+  
